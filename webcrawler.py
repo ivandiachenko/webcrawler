@@ -108,6 +108,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-u', dest='url', help='root URL', required=True)
     args = parser.parse_args()
-    crowler = Crawler(args.url)
-    crowler.run()
-    pprint.pprint(crowler.sitemap) # A little bit buggy library but ok to print dict to stdout
+    crawler = Crawler(args.url)
+    crawler.run()
+    pprint.pprint(crawler.sitemap) # A little bit buggy library but ok to print dict to stdout
